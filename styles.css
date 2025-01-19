@@ -4,17 +4,16 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f9f9f9; /* 淡いグレー */
-    color: #333333; /* 濃いグレー */
+    color: #333333; /* テキスト色: 濃いグレー */
     line-height: 1.6;
 }
 
 /* ヘッダー */
 header {
     background-color: #ffdee9; /* 淡いピンク */
-    color: #333333; /* 濃いグレー */
+    color: #333333; /* テキスト色: 濃いグレー */
     text-align: center;
     padding: 20px 0;
-    border-bottom: 2px solid #cccccc; /* グレーの境界線 */
 }
 
 header h1 {
@@ -22,82 +21,53 @@ header h1 {
     font-size: 2.5rem;
 }
 
-/* メインセクション */
+/* メインコンテンツ */
 main {
     padding: 20px;
     margin: 0 auto;
     max-width: 800px; /* コンテンツ幅を制限 */
 }
 
-/* セクション */
+/* 見出し（h2） */
 h2 {
     color: #ff7eb9; /* 濃いピンク */
-    border-bottom: 2px solid #ffdee9; /* 淡いピンクの線 */
+    border-bottom: 1px solid #cccccc; /* 下線で区切る */
     padding-bottom: 5px;
     margin-top: 40px;
+    font-size: 1.8rem;
 }
 
+/* 段落（p） */
 p {
     margin: 10px 0;
 }
 
+/* リスト */
 ul {
     list-style-type: disc;
     margin-left: 20px;
+    padding-left: 20px;
 }
 
 ul li {
     margin-bottom: 10px;
-}
-
-/* 趣味セクション */
-#skills ul {
-    background-color: #ffffff; /* 白背景 */
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 軽い影 */
+    font-size: 1rem;
 }
 
 /* PDF埋め込み */
 embed {
     display: block;
     margin: 20px auto; /* 中央揃え */
-    border: 2px solid #ffdee9; /* 淡いピンクの枠線 */
-    border-radius: 10px;
+    border: 1px solid #cccccc; /* グレーの枠線 */
+    border-radius: 5px;
 }
 
-/* 連絡先セクション */
+/* フッター */
 footer {
     background-color: #ffdee9; /* 淡いピンク */
     color: #333333;
     text-align: center;
-    padding: 20px 0;
-    border-top: 2px solid #cccccc; /* グレーの境界線 */
-}
-
-footer p {
-    margin: 0;
+    padding: 15px 0;
+    margin-top: 40px;
     font-size: 0.9rem;
-}
-
-/* 追加の調整 */
-a {
-    color: #ff7eb9; /* 濃いピンク */
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-/* メディアクエリ（レスポンシブ対応） */
-@media (max-width: 768px) {
-    embed {
-        width: 100%; /* 小さい画面で幅を自動調整 */
-        height: 400px; /* 高さを調整 */
-    }
-
-    h1 {
-        font-size: 2rem;
-    }
 }
